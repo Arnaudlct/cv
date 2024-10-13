@@ -252,3 +252,50 @@ section > div{
 .interet{
     flex: 0 1 25%;
 }
+
+
+/* Styling for the container */
+.interest-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styling for each interest item (image + text) */
+.interest-item {
+    background-color: #f5f5f5; /* Light background */
+    border: 2px solid #31a9d3; /* Red border */
+    border-radius: 20px; /* Rounded borders */
+    padding: 20px;
+    text-align: center;
+    width: 150px; /* Adjust width as necessary */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Image styling */
+.interest-item img {
+    max-width: 100px; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+/* Text styling */
+.interest-item p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Hover effect for the entire block */
+.interest-item:hover {
+    background-color: #31a9d3; /* Background color changes on hover */
+    color: white; /* Text color changes on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Ensuring text color stays white on hover */
+.interest-item:hover p {
+    color: white;
+}
